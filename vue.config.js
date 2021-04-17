@@ -4,10 +4,8 @@ module.exports = {
   configureWebpack: {
     externals:
       process.env.NODE_ENV === 'production'
-        ? {
-          vue: 'Vue'
-        }
-        : {}
+        ? '/vue_todos/'
+        : '/'
   },
   devServer: {
     overlay: {
